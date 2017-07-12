@@ -1,0 +1,22 @@
+{
+  "name": "oidc-client-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "node-jose": "^0.9.4",
+    "openid-client": "^1.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "scripts": {
+    "start": "babel-node . --presets es2015,stage-2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
