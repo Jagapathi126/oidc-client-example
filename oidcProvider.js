@@ -4,9 +4,9 @@ let issuer = {};
 
 class OIDCProvider {
   static connect() {
-    const ISSUER = process.env.ISSUER || 'http://localhost:3000';
-    Issuer.discover(ISSUER).then((i) => {
-      issuer = i;
+    const ISSUER = process.env.ISSUER || '10.0.2.165:3000';
+    return Issuer.discover(ISSUER).then((i) => {
+      return issuer = i;
     }).catch((e) => {
       console.log(e);
     });
@@ -16,7 +16,4 @@ class OIDCProvider {
     return issuer;
   }
 }
-
-OIDCProvider.connect();
-
 module.exports = OIDCProvider;
