@@ -5,6 +5,7 @@ import OIDCProvider from "./oidcProvider";
 import routes from "./routes";
 import ClientManager from "./clients";
 import { client } from "./config";
+import LoginService from "./services/login.service";
 
 OIDCProvider.connect().then(() => {
   ClientManager.add(client);
@@ -25,6 +26,11 @@ app.use(session({
 
 app.use((req, res, next) => {
   req.session.client_id = client.client_id;
+  // if (req.session.token && req.url == "/login") {
+  //   next();
+  // } else {
+  //   LoginService.renderLogin(req, res, next);
+  // }
   next();
 })
 

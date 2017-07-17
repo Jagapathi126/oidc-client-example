@@ -10,9 +10,10 @@ export default class LoginService {
     let client = ClientManager.getById(req.session.client_id);
     const authorizationRequest = {
       claims: {
-        id_token: { email_verified: null },
-        userinfo: { sub: null, email: null },
+        id_token: { email_verified: null, role: null },
+        userinfo: { sub: null, email: null, role: null },
       },
+      prompt: 'consent',
       redirect_uri: req.protocol + "://" + req.get("host") + "/cb",
       scope: "openid email",
       state: req.session.state,

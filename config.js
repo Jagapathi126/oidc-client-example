@@ -12,16 +12,16 @@ const client = {
     ],
     "subject_type": "public",
     "token_endpoint_auth_method": "client_secret_basic",
-    "client_id": "2dbe4ec0-3e1b-4633-9743-0d203c1b20cf",
-    "client_id_issued_at": 1499949187,
-    "client_secret": "FRaVvzVOcVIClQ//mpk2Un10bGF9AFgi2RpyxX8B3GjwUvttpqA/YSVx6RYjN7pA",
+    "client_id": "539337e6-7558-4039-ab71-090cd588ab7e",
+    "client_id_issued_at": 1500045073,
+    "client_secret": "gJfCb764epZLzIKjgS/DgaB+5FpkuSOSEHEM3wZNONMQNqnow2rBQ/FACHTdPid1",
     "client_secret_expires_at": 0,
     "redirect_uris": [
-        "http://localhost:3001/cb",
-        "http://localhost:3002/cb"
+        "http://rs1.local.com:3001/cb",
+        "http://rs2.local.com:3002/cb"
     ],
-    "registration_client_uri": "http://10.0.2.165:3000/reg/2dbe4ec0-3e1b-4633-9743-0d203c1b20cf",
-    "registration_access_token": "NDZiY2M5ZmQtYjQ1Mi00MWNlLThjYWMtM2FmOGVhMTRlOWVk6iMGMfTPRH6JKX93aTcgnGOqeepeHhKQQ4gUSrMNFBOBTPh62-ze9ewI3hDNy_oJjPfRp9BVnoqq3Tdm2XLpIw"
+    "registration_client_uri": "http://10.0.2.165:3000/reg/539337e6-7558-4039-ab71-090cd588ab7e",
+    "registration_access_token": "Njc3ZmJiNTEtODM4Zi00Y2EwLWFkM2EtODliZTdjM2Q2YzIzt9gNiytg180EFLn45GN6C1BgzCuVb5yQh7fnW0fSesrrG-Ky2JZB3zphhYY-Zfa1awHxIAnewD1fpN6NrujKeQ"
 };
 
 
